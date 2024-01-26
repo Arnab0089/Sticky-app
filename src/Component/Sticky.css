@@ -1,0 +1,67 @@
+h1{
+    color: aliceblue;
+    span {
+        display: block;
+        color: darken(white,20%);
+        font-size: 14px;
+        font-style: italic;
+        height: 14px;
+    }
+}
+.note-from {
+    display: flex;
+    flex-direction: column;
+   min-width: 200px;
+   max-width: 370px;
+   textarea {
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid lightslategray;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100px;
+    outline: none;
+   }
+   button{
+    width: 100%;
+    background-color: #fff27f;
+    cursor: pointer;
+    padding: 10px ;
+    border: none;
+    font-size: large;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    &:hover{
+        background-color: tomato;
+        color: white;
+
+    }
+   }
+
+}
+
+.note{
+    position: absolute;
+    cursor: pointer;
+    background-image: url('../assets/paper-1763262_1920.png');
+    background-size: cover;
+    top: 100px;
+    
+    right: 200px;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+
+    .text{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+        white-space: pre-wrap;
+        overflow:scroll;
+        scroll-behavior: smooth;
+        
+    }
+    .text::-webkit-scrollbar {
+        display: none; /* Hide scrollbar */
+    }
+
+}
